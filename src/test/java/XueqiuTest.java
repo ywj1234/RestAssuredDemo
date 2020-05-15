@@ -3,6 +3,7 @@
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
+import java.util.Date;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.*;
@@ -48,5 +49,11 @@ public class XueqiuTest {
                 .body(map)
                 .when().post("https://www.baidu.com")
                 .then().log().all().statusCode(200);
+    }
+
+    @Test
+    public String sayHello(){
+        //修改返回的字符串的内容
+        return "abcdefg. Hello jenkins, " + new Date();
     }
 }
