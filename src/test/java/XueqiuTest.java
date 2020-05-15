@@ -54,6 +54,6 @@ public class XueqiuTest {
     @Test
     public String sayHello(){
         //修改返回的字符串的内容
-        return "abcdefg. Hello jenkins, " + new Date()+"ywj";
+        return "abcdefg. Hello jenkins, " + new Date()+"ywj"+"2019";
     }
 }
